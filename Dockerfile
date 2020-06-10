@@ -1,6 +1,7 @@
 FROM fedora:31
 
-RUN sudo dnf copr enable geext/cJSON
+RUN sudo dnf install -y dnf-plugins-core
+RUN sudo dnf -y copr enable geext/cJSON
 
 RUN sudo dnf install -y \
   gcc \
