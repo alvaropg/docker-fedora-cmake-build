@@ -1,5 +1,7 @@
 FROM fedora:31
 
+RUN sudo dnf copr enable geext/cJSON
+
 RUN sudo dnf install -y \
   gcc \
   gcc-c++ \
@@ -19,4 +21,5 @@ RUN sudo dnf install -y \
   doxygen \
   libcurl-devel \
   openssl-devel \
+  cjson \
   && sudo dnf clean all
