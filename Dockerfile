@@ -17,10 +17,12 @@ RUN sudo dnf install -y \
   gtest-devel \
   rpmdevtools \
   gcovr \
+  lcov \
   libxml2-devel \
   fuse-devel \
   doxygen \
   libcurl-devel \
   openssl-devel \
   cjson \
+  python3-pyyaml \
   && sudo dnf clean all
