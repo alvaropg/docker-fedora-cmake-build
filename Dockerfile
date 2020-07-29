@@ -12,6 +12,8 @@ RUN sudo dnf install -y \
   glib2-devel \
   gtest \
   gtest-devel \
+  gmock \
+  gmock-devel \
   rpmdevtools \
   gcovr \
   lcov \
@@ -21,4 +23,6 @@ RUN sudo dnf install -y \
   libcurl-devel \
   openssl-devel \
   python3-pyyaml \
+  libsoup-devel \
+  libarchive-devel \
   && sudo dnf clean all
