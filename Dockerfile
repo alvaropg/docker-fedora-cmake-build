@@ -1,8 +1,5 @@
 FROM fedora:31
 
-RUN sudo dnf install -y dnf-plugins-core
-RUN sudo dnf -y copr enable geext/cJSON
-
 RUN sudo dnf install -y \
   gcc \
   gcc-c++ \
@@ -15,6 +12,8 @@ RUN sudo dnf install -y \
   glib2-devel \
   gtest \
   gtest-devel \
+  gmock \
+  gmock-devel \
   rpmdevtools \
   gcovr \
   lcov \
@@ -23,6 +22,7 @@ RUN sudo dnf install -y \
   doxygen \
   libcurl-devel \
   openssl-devel \
-  cjson \
   python3-pyyaml \
+  libsoup-devel \
+  libarchive-devel \
   && sudo dnf clean all
