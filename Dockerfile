@@ -25,4 +25,5 @@ RUN sudo dnf install -y \
   python3-pyyaml \
   libsoup-devel \
   libarchive-devel \
+  wget \
   && sudo dnf clean all
