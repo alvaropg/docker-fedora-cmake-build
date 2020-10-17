@@ -25,5 +25,9 @@ RUN sudo dnf install -y \
   python3-pyyaml \
   libsoup-devel \
   libarchive-devel \
-  wget \
+  sqlite-devel \
+  json-c-devel \
+  dbus-devel \
+  libjpeg-devel \
+  cryptsetup-devel \
   && sudo dnf clean all
