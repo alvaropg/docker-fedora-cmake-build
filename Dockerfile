@@ -20,9 +20,13 @@ RUN sudo dnf install -y \
   libxml2-devel \
   fuse-devel \
   doxygen \
+  rsync \
   libcurl-devel \
   openssl-devel \
   python3-pyyaml \
+  python3-websockets \
+  python3-beautifulsoup4 \
+  python3-requests \
   libsoup-devel \
   libarchive-devel \
   sqlite-devel \
@@ -30,4 +34,5 @@ RUN sudo dnf install -y \
   dbus-devel \
   libjpeg-devel \
   cryptsetup-devel \
+  python3-jira \
   && sudo dnf clean all
