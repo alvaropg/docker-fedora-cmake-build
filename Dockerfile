@@ -35,4 +35,7 @@ RUN sudo dnf install -y \
   libjpeg-devel \
   cryptsetup-devel \
   python3-jira \
+  python-pylint \
+  ftp \
+  glibc-devel.i686 \
   && sudo dnf clean all
