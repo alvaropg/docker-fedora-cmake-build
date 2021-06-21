@@ -4,7 +4,6 @@ RUN sudo dnf install -y \
   gcc \
   gcc-c++ \
   cmake \
-  json-c \
   ninja-build \
   pkgconf-pkg-config \
   libtirpc-devel \
