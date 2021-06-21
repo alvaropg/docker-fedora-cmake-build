@@ -4,7 +4,6 @@ RUN sudo dnf install -y \
   gcc \
   gcc-c++ \
   cmake \
-  json-c \
   ninja-build \
   pkgconf-pkg-config \
   libtirpc-devel \
@@ -37,6 +36,8 @@ RUN sudo dnf install -y \
   cryptsetup-devel \
   python3-jira \
   python-pylint \
+  python3-gitlab \
+  python3-pygithub \
   ftp \
   glibc-devel.i686 \
   && sudo dnf clean all
