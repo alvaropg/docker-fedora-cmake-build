@@ -4,6 +4,9 @@ RUN sudo dnf install -y \
   gcc \
   gcc-c++ \
   cmake \
+  uuid-devel \
+  libudev-devel \
+  device-mapper-devel \
   ninja-build \
   pkgconf-pkg-config \
   libtirpc-devel \
