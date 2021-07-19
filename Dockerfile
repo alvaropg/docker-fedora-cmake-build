@@ -40,4 +40,7 @@ RUN sudo dnf install -y \
   python3-pygithub \
   ftp \
   glibc-devel.i686 \
+  uuid-devel \
+  libudev-devel \
+  device-mapper-devel \
   && sudo dnf clean all
