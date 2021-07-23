@@ -43,4 +43,5 @@ RUN sudo dnf install -y \
   uuid-devel \
   libudev-devel \
   device-mapper-devel \
+  giflib-devel \
   && sudo dnf clean all
