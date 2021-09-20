@@ -44,4 +44,5 @@ RUN sudo dnf install -y \
   libudev-devel \
   device-mapper-devel \
   giflib-devel \
+  java-1.8.0-openjdk-devel.x86_64 \
   && sudo dnf clean all
