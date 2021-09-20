@@ -40,5 +40,9 @@ RUN sudo dnf install -y \
   python3-pygithub \
   ftp \
   glibc-devel.i686 \
+  uuid-devel \
+  libudev-devel \
+  device-mapper-devel \
+  giflib-devel \
   java-1.8.0-openjdk-devel.x86_64 \
   && sudo dnf clean all
