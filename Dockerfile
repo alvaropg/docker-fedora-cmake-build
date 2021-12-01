@@ -37,5 +37,6 @@ RUN sudo dnf install -y \
   python3-jira \
   python-pylint \
   ftp \
+  wget \
   glibc-devel.i686 \
   && sudo dnf clean all
