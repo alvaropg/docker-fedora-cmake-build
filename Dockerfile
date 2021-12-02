@@ -42,6 +42,7 @@ RUN sudo dnf install -y \
   python3-gitlab \
   python3-pygithub \
   ftp \
+  wget \
   ffmpeg-devel \
   glibc-devel.i686 \
   uuid-devel \
