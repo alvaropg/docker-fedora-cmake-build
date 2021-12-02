@@ -1,5 +1,8 @@
 FROM fedora:31
 
+RUN dnf -y install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm && \
+    dnf -y install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
 RUN sudo dnf install -y \
   gcc \
   gcc-c++ \
@@ -36,7 +39,15 @@ RUN sudo dnf install -y \
   cryptsetup-devel \
   python3-jira \
   python-pylint \
+  python3-gitlab \
+  python3-pygithub \
   ftp \
   wget \
+  ffmpeg-devel \
   glibc-devel.i686 \
+  uuid-devel \
+  libudev-devel \
+  device-mapper-devel \
+  giflib-devel \
+  java-1.8.0-openjdk-devel.x86_64 \
   && sudo dnf clean all
